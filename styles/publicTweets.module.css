@@ -1,0 +1,110 @@
+.container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px;
+  max-width: 750px; /* Slightly wider layout */
+  border: 2px solid #ffd700; /* Gold border for consistency */
+  border-radius: 15px; /* Rounded edges for modern look */
+  background-color: #fdf5e6; /* Softer gold background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Balanced shadow */
+}
+
+.scrollable {
+  max-height: 500px; /* Increased height for better proportionality */
+  overflow-y: auto; /* Enables vertical scrolling */
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+  padding: 15px;
+  margin-top: 20px;
+  border: 1px solid #ccc; /* Subtle border for separation */
+  border-radius: 12px; /* Rounded edges for smooth look */
+  background-color: #fffdfa; /* Off-white background for contrast */
+}
+
+.scrollable::-webkit-scrollbar {
+  width: 8px; /* Scrollbar width */
+}
+
+.scrollable::-webkit-scrollbar-thumb {
+  background: #ffd700; /* Gold scrollbar for thematic consistency */
+  border-radius: 5px; /* Rounded scrollbar edges */
+}
+
+.tweetBox {
+  margin: 15px auto;
+  max-width: 600px; /* Restrict box width */
+  padding: 15px; /* Adjusted padding for balance */
+  border: 1px solid #ddd; /* Neutral border for clean separation */
+  border-radius: 12px; /* Rounded edges for modern look */
+  background-color: #ffffff; /* White background for clarity */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tweetBox:hover {
+  transform: translateY(-2px); /* Slight lift on hover */
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.tweetBox p {
+  margin: 10px 0; /* Consistent spacing */
+  color: #333; /* Standard text color for readability */
+  font-size: 16px; /* Consistent font size */
+}
+
+.tweetBox a {
+  color: #6c5ce7; /* Purple for links to contrast gold theme */
+  text-decoration: none;
+  font-weight: bold; /* Emphasize links */
+}
+
+.tweetBox a:hover {
+  text-decoration: underline; /* Underline effect for accessibility */
+}
+
+.embedContainer {
+  margin: 15px 0; /* Balanced spacing */
+}
+
+.button {
+  margin-top: 10px; /* Adjust spacing above buttons */
+  padding: 12px 20px; /* Adjust padding for better balance */
+  font-size: 14px; /* Consistent font size */
+  font-weight: bold; /* Emphasize button text */
+  border-radius: 8px; /* Softer rounded edges */
+  cursor: pointer;
+  background: linear-gradient(120deg, #ffd700, #ffc107); /* Gold gradient */
+  color: #ffffff; /* White text for readability */
+  border: none;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.button:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  background: linear-gradient(120deg, #ffc107, #ffbf00); /* Darker gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.likeStatus {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555; /* Subtle text color for distinction */
+  font-weight: bold; /* Bold text for emphasis */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    max-width: 90%; /* Use most of the screen width */
+    padding: 15px; /* Adjust padding for smaller devices */
+  }
+
+  .tweetBox {
+    padding: 10px; /* Reduced padding for smaller devices */
+  }
+
+  .button {
+    padding: 10px 15px; /* Adjust button size */
+    font-size: 13px; /* Smaller font for better fit */
+  }
+}

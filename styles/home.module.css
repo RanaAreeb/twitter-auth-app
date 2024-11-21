@@ -1,0 +1,87 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Full viewport height */
+  text-align: center;
+  background-color: #f5f6fa;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: #0984e3;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.instructions {
+  font-size: 18px;
+  color: #636e72;
+  margin-bottom: 20px;
+  line-height: 1.6; /* Improved readability */
+}
+
+.welcome {
+  font-size: 24px;
+  font-weight: bold;
+  color: #00cec9;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Subtle text shadow */
+}
+
+.username {
+  color: #6c5ce7;
+  font-weight: bold;
+  text-decoration: underline; /* Highlight username */
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap; /* Support multiple buttons in smaller screens */
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center; /* Center-align buttons */
+}
+
+.button {
+  background-color: #6c5ce7;
+  color: #fff;
+  border: none;
+  padding: 12px 24px; /* Slightly larger padding for better UX */
+  font-size: 16px;
+  font-weight: bold; /* Make text bold for emphasis */
+  border-radius: 8px; /* Rounded corners for a modern look */
+  cursor: pointer;
+  transition: transform 0.3s ease, background 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow for depth */
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.05); /* Elevate on hover */
+  background-color: #341f97; /* Darker color for hover effect */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Increase shadow intensity */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 28px; /* Adjust heading size for smaller screens */
+  }
+
+  .instructions {
+    font-size: 16px; /* Adjust instructions font size */
+  }
+
+  .buttons {
+    gap: 15px; /* Reduce gap between buttons */
+  }
+
+  .button {
+    padding: 10px 20px; /* Adjust padding for smaller screens */
+    font-size: 14px; /* Reduce font size for better fit */
+  }
+}

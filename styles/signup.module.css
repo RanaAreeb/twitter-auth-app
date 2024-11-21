@@ -1,0 +1,59 @@
+/* Centered form layout with consistent spacing */
+.signupForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Increased gap for better spacing */
+  margin-top: 30px; /* More top margin for breathing room */
+  padding: 20px; /* Added padding for a cohesive look */
+  border: 2px solid #ececec; /* Light border for subtle definition */
+  border-radius: 10px; /* Rounded edges for modern design */
+  background-color: #f9f9f9; /* Light gray background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 400px; /* Constrain width for a cleaner look */
+  margin-left: auto; /* Center the form horizontally */
+  margin-right: auto;
+}
+
+.signupInput {
+  width: 100%; /* Full width for consistency */
+  max-width: 350px; /* Constrained width for better usability */
+  padding: 12px; /* Slightly larger padding for comfort */
+  border-radius: 8px; /* Softer edges */
+  border: 1px solid #ccc; /* Subtle border for clarity */
+  font-size: 16px; /* Standard font size */
+  background-color: #ffffff; /* White background for contrast */
+  transition: border-color 0.3s ease; /* Smooth border change on focus */
+}
+
+.signupInput:focus {
+  border-color: #6c5ce7; /* Purple border on focus */
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 4px rgba(108, 92, 231, 0.5); /* Add subtle glow */
+}
+
+.signupButton {
+  margin-top: 15px; /* Adjusted top margin */
+  padding: 12px 25px; /* Larger padding for better usability */
+  font-size: 16px; /* Standard button font size */
+  font-weight: bold; /* Bold text for emphasis */
+  border-radius: 8px; /* Rounded edges */
+  cursor: pointer;
+  background: linear-gradient(120deg, #6c5ce7, #341f97); /* Purple gradient */
+  color: #ffffff; /* White text for contrast */
+  border: none;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.signupButton:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+  background: linear-gradient(120deg, #341f97, #6c5ce7); /* Reverse gradient on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.signupButton:active {
+  transform: scale(1); /* Remove zoom on click */
+  background: linear-gradient(120deg, #5a4de7, #341f97); /* Slightly darker gradient on click */
+}
+

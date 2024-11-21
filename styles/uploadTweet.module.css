@@ -1,0 +1,71 @@
+.container {
+  text-align: center;
+  margin: 20px auto;
+  padding: 20px; /* Added padding for spacing */
+  max-width: 600px; /* Centered and constrained width */
+  border: 2px solid #6c5ce7; /* Purple border for emphasis */
+  border-radius: 15px; /* Rounded corners for a modern look */
+  background-color: #f9f9ff; /* Light purple background */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Increased gap for better spacing */
+  margin-bottom: 20px;
+}
+
+.input {
+  width: 100%;
+  max-width: 400px; /* Restricts width on larger screens */
+  padding: 12px; /* Slightly larger padding for better usability */
+  border-radius: 8px; /* More rounded corners for modern look */
+  border: 1px solid #ccc; /* Subtle border */
+  font-size: 16px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input:focus {
+  border-color: #6c5ce7; /* Purple focus border */
+  outline: none;
+  box-shadow: 0 4px 8px rgba(108, 92, 231, 0.2); /* Glowing effect on focus */
+}
+
+.button {
+  padding: 12px 25px; /* Larger button for better clickability */
+  font-size: 16px;
+  font-weight: bold; /* Bold text for emphasis */
+  border-radius: 8px; /* Rounded corners */
+  cursor: pointer;
+  background: linear-gradient(120deg, #6c5ce7, #341f97); /* Purple gradient */
+  color: #ffffff; /* White text for contrast */
+  border: none;
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.button:hover {
+  transform: translateY(-2px) scale(1.05); /* Slight lift and zoom on hover */
+  background: linear-gradient(120deg, #341f97, #6c5ce7); /* Reverse gradient */
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15); /* Enhanced shadow on hover */
+}
+
+.embedContainer {
+  margin: 20px auto;
+  max-width: 500px;
+  padding: 15px; /* Added padding for inner content */
+  border: 1px solid #ddd; /* Subtle border for content container */
+  border-radius: 10px; /* Rounded corners for consistency */
+  background-color: #ffffff; /* White background for contrast */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.error {
+  color: red;
+  font-size: 14px; /* Consistent text size for error messages */
+  margin-top: 10px; /* Added spacing above the error message */
+  font-weight: bold; /* Bold text for emphasis */
+}
